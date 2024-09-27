@@ -10,7 +10,7 @@ body {
   height: 50%;
 }
 
-.card:hover {
+.homepageCard:hover {
   animation: scale 50ms ease forwards;
   border: 2px solid #dc3545;
 }
@@ -26,4 +26,8 @@ body {
 
 nav {
   border-bottom: 1px solid #dc3545;
+}
+
+.detail {
+  height: 850px;
 }

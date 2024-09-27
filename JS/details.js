@@ -24,7 +24,7 @@ const getGuitar = () => {
       const newCol = document.createElement("div");
       newCol.classList.add("col", "col-12", "col-md-6");
       newCol.innerHTML = `
-        <div class="card mb-5 border-0">
+        <div class="card mb-5 border-0 shadow detail">
             <img src="${guitar.imageUrl}" class="card-img-top object-fit-contain h-75" alt="guitar picture">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>
