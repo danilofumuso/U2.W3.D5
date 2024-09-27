@@ -21,19 +21,19 @@ const getItems = () => {
         const newCol = document.createElement("div");
         newCol.classList.add("col", "col-12", "col-md-4", "col-lg-3");
         newCol.innerHTML = `
-        <div class="card h-100 border-0">
-            <img src="${guitar.imageUrl}" class="card-img-top h-25 object-fit-contain" alt="guitar picture">
-            <div class="card-body d-flex flex-column">
-            <div>
-            <h5 class="card-title">${guitar.name}</h5>
-            <p class="card-text">${guitar.brand}</p>
-            <p class="card-text">${guitar.description}</p>
-            <p class="card-text">${guitar.price} €</p>
-            </div>
-            <div>
-            <a href="" class="btn btn-outline-primary"> Vai ai Dettagli</a>
-            </div>
+        <div class="card border-0">
+            <img src="${guitar.imageUrl}" class="card-img-top object-fit-contain" alt="guitar picture">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+               <h5 class="card-title fw-bold">${guitar.name}</h5>
+               <p class="card-text fw-bold">${guitar.brand}</p>
+               <p class="card-text ">${guitar.description}</p>
+               </div>
+               <div>
+               <p class="card-text text-danger">${guitar.price} €</p>
+               <a href="./details.html?guitarId=${guitar._id}" class="btn btn-outline-primary">Scopri di Più</a>
               </div>
+            </div>
         </div>
         `;
         const row = document.getElementById("product-row");
