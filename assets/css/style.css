@@ -1,7 +1,28 @@
 .card {
-  height: 500px;
+  height: 600px;
+  border: none;
 }
 
 .card img {
   height: 50%;
+}
+
+.card:hover {
+  animation: scale 50ms ease forwards;
+  border: 2px solid #dc3545;
+}
+
+@keyframes scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 900;
 }

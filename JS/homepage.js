@@ -19,9 +19,9 @@ const getItems = () => {
       console.log(guitars);
       guitars.forEach((guitar) => {
         const newCol = document.createElement("div");
-        newCol.classList.add("col", "col-12", "col-md-4", "col-lg-3");
+        newCol.classList.add("col", "col-12", "col-sm-6", "col-md-4", "col-lg-3", "my-5");
         newCol.innerHTML = `
-        <div class="card border-0">
+        <div class="card">
             <img src="${guitar.imageUrl}" class="card-img-top object-fit-contain" alt="guitar picture">
             <div class="card-body d-flex flex-column justify-content-between">
               <div>

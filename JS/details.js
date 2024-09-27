@@ -5,6 +5,7 @@ const authorization =
 const addressBarContent = new URLSearchParams(location.search); // questo prende tutti i parametri dalla barra degli elementi!
 const guitarId = addressBarContent.get("guitarId"); //prende l'id dalla barra degli indirizzi prendendo il nome della stringa dall'href della a della card!
 
+//recupero il singolo prodotto dal dataBase facendo una chiamata specifica!
 const getGuitar = () => {
   fetch(shopURL + "/" + guitarId, {
     headers: {
@@ -35,6 +36,7 @@ const getGuitar = () => {
                <p class="card-text text-danger">${guitar.price} €</p>
                <a href="./homepage.html" class="btn btn-outline-primary">Torna alla Home</a>
                <button onclick="deleteProduct()" class="btn btn-outline-danger">Elimina Prodotto</button>
+               <a href="./back-office.html?guitarId=${guitar._id}" class="btn btn-outline-warning">Modifica Prodotto</a> 
               </div>
             </div>
         </div>
