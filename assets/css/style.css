@@ -1,3 +1,6 @@
+body {
+  padding-top: 200px;
+}
 .card {
   height: 600px;
   border: none;
@@ -22,7 +25,5 @@
 }
 
 nav {
-  position: sticky;
-  top: 0px;
-  z-index: 900;
+  border-bottom: 1px solid #dc3545;
 }
